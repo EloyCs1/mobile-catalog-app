@@ -1,0 +1,39 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #333333;
+  --color-disabled: #d9d9d9;
+  --color-titanium-black: #62605f;
+  --color-titanium-violet: #4d4e5f;
+  --color-titanium-grey: #aca49b;
+  --color-titanium-yellow: #f0e1b9;
+
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+
+  @media only screen and (max-device-width: 960px) {
+    display: none;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-disabled);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-red);
+}
